@@ -16,7 +16,19 @@ func lbToKg(lb float64) float64 {
 
 func main()  {
 
-	fmt.Println(milesToKm(1))
-	fmt.Println(fahrenheitToCelsius(-20))
-	fmt.Println(lbToKg(52.9109))
+	var container float64
+	var choice int64
+	fmt.Println("What would you like to convert?")
+	fmt.Print("1 for distance, 2 for temp, 3 for weight: ")
+	fmt.Scanf("%v", &choice)
+	fmt.Print("Convert for which value?: ")
+	fmt.Scanf("%v", &container)
+	switch choice {
+	case 1:
+		fmt.Println(milesToKm(container))
+	case 2:
+		fmt.Println(fahrenheitToCelsius(container))
+	case 3:
+		fmt.Println(lbToKg(container))
+	}
 }
