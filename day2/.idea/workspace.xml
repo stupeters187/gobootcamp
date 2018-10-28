@@ -35,11 +35,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="range.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="range.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/range.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
               <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+              <folding>
+                <element signature="e#14#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="switch.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/switch.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
               <folding>
                 <element signature="e#14#26#0" expanded="true" />
               </folding>
@@ -63,6 +75,7 @@
         <option value="$PROJECT_DIR$/test.go" />
         <option value="$PROJECT_DIR$/floats.go" />
         <option value="$PROJECT_DIR$/range.go" />
+        <option value="$PROJECT_DIR$/switch.go" />
       </list>
     </option>
   </component>
@@ -186,6 +199,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="26" lean-forward="false" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#14#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/switch.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding>
             <element signature="e#14#26#0" expanded="true" />
           </folding>
