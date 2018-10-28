@@ -47,13 +47,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="switch.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="switch.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/switch.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
               <folding>
                 <element signature="e#14#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings2.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/strings2.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+              <folding>
+                <element signature="e#14#59#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,6 +88,7 @@
         <option value="$PROJECT_DIR$/floats.go" />
         <option value="$PROJECT_DIR$/range.go" />
         <option value="$PROJECT_DIR$/switch.go" />
+        <option value="$PROJECT_DIR$/strings2.go" />
       </list>
     </option>
   </component>
@@ -211,6 +224,16 @@
           <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding>
             <element signature="e#14#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/strings2.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="e#14#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
