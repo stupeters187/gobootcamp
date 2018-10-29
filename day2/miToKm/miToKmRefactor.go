@@ -1,14 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+	"strconv"
+)
 
 var miToKm float64 = 1.60934
 
 func main()  {
 
 	// get the number of miles from the user
-	var number float64
-	fmt.Scanln(&number)
+	number, err := strconv.ParseFloat(os.Args[1], 64)
+	if err != nil {
+		panic(err)
+	}
 
 	fmt.Println("<!DOCTYPE html>")
 	fmt.Println("<html>")
@@ -20,6 +26,4 @@ func main()  {
 
 	fmt.Println("</body>")
 	fmt.Println("</html>")
-
-
 }
