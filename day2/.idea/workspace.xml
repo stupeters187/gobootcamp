@@ -71,8 +71,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="maps.go" pinned="false" current-in-tab="true">
+      <file leaf-file-name="maps.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/maps.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+              <folding>
+                <element signature="e#14#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="more-maps.go" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/more-maps.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding>
+                <element signature="e#14#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nested-map.go" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nested-map.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
               <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
@@ -111,6 +135,8 @@
         <option value="$PROJECT_DIR$/matrix-arrays.go" />
         <option value="$PROJECT_DIR$/slice.go" />
         <option value="$PROJECT_DIR$/maps.go" />
+        <option value="$PROJECT_DIR$/more-maps.go" />
+        <option value="$PROJECT_DIR$/nested-map.go" />
       </list>
     </option>
   </component>
@@ -347,6 +373,26 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/maps.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="4" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#14#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/more-maps.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nested-map.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
