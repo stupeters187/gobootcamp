@@ -3,6 +3,9 @@ package main
 import "fmt"
 
 func reverse(arr []int) ([]int) {
+	if len(arr) <= 1 {
+		return arr
+	}
 	var new []int
 	for i := len(arr)-1; i >= 0; i--{
 		new = append(new, arr[i])
