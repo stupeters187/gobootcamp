@@ -44,6 +44,6 @@ func average(arr []float64) float64 {
 }
 
 func main()  {
-	arr := []float64{90,21,3,45,67,73,11}
+	arr := []float64{90,21,3,45,67,73}
 	fmt.Println(average(arr))
 }

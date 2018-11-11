@@ -2,8 +2,14 @@ package main
 
 import "fmt"
 
-var x = []int{1,2,3,4}
+func sum(nums ...int) int {
+	total := 0
+	for _, v := range nums{
+		total += v
+	}
+	return total
+}
 
 func main()  {
-	fmt.Println(len(x))
+	fmt.Println(sum(1,2,3,4,5,6,7,8,9))
 }
