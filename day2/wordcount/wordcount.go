@@ -6,10 +6,9 @@ import (
 )
 
 func Wordcount(str string) map[string]int {
-	strMap := make(map[string]int)
-	words := strings.Fields(str)
-	for _, v := range words {
-		strMap[v]++
+	strMap := map[string]int{}
+	for _, word := range strings.Fields(str) {
+		strMap[word]++
 	}
 	return strMap
 }
