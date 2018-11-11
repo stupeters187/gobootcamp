@@ -23,14 +23,14 @@ func getGravatarHash(email string) string {
 
 func main()  {
 
+	fmt.Fprintln(os.Stderr, "Please enter your name: ")
 	var name string
-	var email string
-	var website string
-	fmt.Println("Please enter your name: ")
 	fmt.Scanln(&name)
-	fmt.Println("Please enter your email: ")
+	fmt.Fprintln(os.Stderr, "Please enter your email: ")
+	var email string
 	fmt.Scanln(&email)
-	fmt.Println("Please enter your website: ")
+	fmt.Fprintln(os.Stderr, "Please enter your website: ")
+	var website string
 	fmt.Scanln(&website)
 
 	file, err := os.Create("index.html")
