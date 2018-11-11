@@ -6,6 +6,8 @@ import (
 	"crypto/md5"
 	"io"
 	"encoding/hex"
+	"os"
+	"log"
 )
 
 func getGravatarHash(email string) string {
@@ -20,16 +22,36 @@ func getGravatarHash(email string) string {
 }
 
 func main()  {
-	gravatarHash := getGravatarHash("stu@chainsafe.io")
-	fmt.Println(`<!DOCTYPE html>
+
+	var name string
+	var email string
+	var website string
+	fmt.Println("Please enter your name: ")
+	fmt.Scanln(&name)
+	fmt.Println("Please enter your email: ")
+	fmt.Scanln(&email)
+	fmt.Println("Please enter your website: ")
+	fmt.Scanln(&website)
+
+	file, err := os.Create("index.html")
+	if err != nil {
+		log.Fatal("Cannot create file", err)
+	}
+	defer file.Close()
+
+	gravatarHash := getGravatarHash(email)
+	fmt.Fprintf(file,`<!DOCTYPE html>
 <html>
 	<head>
 	</head>
 	<body>
-		<img src="http://www.gravatar.com/avatar` + gravatarHash + `?d=identicon">
+		<h1>Welcome to `+ name +`'s Profile</h1>
+		<img src="http://www.gravatar.com/avatar/` + gravatarHash + `?d=identicon">
+		<li>
+			<ul><a href="mailto:`+ email +`">email ` + name + `</a></ul>
+			<ul><a href="http://` + website + `">` + name + `'s website</a></ul>
+		</li>
 	</body>
 </html>
 `)
-
-
 }

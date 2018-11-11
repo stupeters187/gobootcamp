@@ -1,15 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"io/ioutil"
+)
 
-func sum(nums ...int) int {
-	total := 0
-	for _, v := range nums{
-		total += v
+func check(e error) {
+	if e != nil {
+		panic(e)
 	}
-	return total
 }
 
 func main()  {
-	fmt.Println(sum(1,2,3,4,5,6,7,8,9))
+
+	d1 := []byte("hello\ngo\n")
+	err := ioutil.WriteFile("/tmp/dat1", d1, 0644)
+	check(err)
 }
