@@ -5,12 +5,19 @@ import (
 	"fmt"
 )
 
-func main()  {
-
+func Wordcount(str string) map[string]int {
 	strMap := make(map[string]int)
-	str := strings.Split("test test test", " ")
-	for _, v := range str {
+	words := strings.Fields(str)
+	for _, v := range words {
 		strMap[v]++
 	}
-	fmt.Println(strMap["test"])
+	return strMap
+}
+
+
+func main()  {
+
+	str := "test test test"
+	result := Wordcount(str)
+	fmt.Println(result)
 }
