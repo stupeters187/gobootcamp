@@ -6,7 +6,7 @@ type MyClass struct {
 	x int
 }
 
-func myNewClass(x int) *MyClass {
+func NewMyClass(x int) *MyClass {
 	return &MyClass{
 		x: x,
 	}
@@ -17,6 +17,6 @@ func (this *MyClass) whatever() {
 }
 
 func main()  {
-	obj := myNewClass(5)
+	obj := NewMyClass(5)
 	obj.whatever()
 }
