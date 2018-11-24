@@ -3,30 +3,39 @@ package main
 import (
 	"os"
 	"log"
-	"io/ioutil"
+	//"io/ioutil"
+	"fmt"
+	"io"
 )
 
+func cp(srcFileName, dstFileName string) error {
+	dstFile, err := os.Create(dstFileName)
+	if err != nil {
+		return fmt.Errorf("error creating destination file: %v", err)
+	}
+
+	defer dstFile.Close()
+
+	srcFile, err := os.Open(srcFileName)
+	if err != nil {
+		return fmt.Errorf("error opening source file: %v", err)
+	}
+
+	defer srcFile.Close()
+
+	_, err = io.Copy(dstFile, srcFile)
+	if err != nil {
+		return fmt.Errorf("error writing destination file: %v", err)
+	}
+	return nil
+}
+
 func main()  {
-	dst, err := os.Create(os.Args[2])
-	if err != nil {
-		log.Fatalln("program broke")
+	if len(os.Args) < 3 {
+		log.Fatalln("Usage: my-cp <SRC> <DST>")
 	}
+	srcFileName := os.Args[1]
+	dstFileName := os.Args[2]
 
-	defer dst.Close()
-
-	src, err := os.Open(os.Args[1])
-	if err != nil {
-		log.Fatalln("program broke")
-	}
-
-	bs, err := ioutil.ReadAll(src)
-	if err != nil {
-		log.Fatalln("program broke")
-	}
-
-	str := []byte(bs)
-	_, err = dst.Write(str)
-	if err != nil {
-		log.Fatalln("failure writing to file", err.Error())
-	}
+	cp(srcFileName, dstFileName)
 }
