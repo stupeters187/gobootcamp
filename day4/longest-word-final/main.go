@@ -6,6 +6,7 @@ import (
 	"os"
 	"log"
 	"fmt"
+	"strings"
 )
 
 func LongestWord(rdr io.Reader) string {
@@ -13,9 +14,17 @@ func LongestWord(rdr io.Reader) string {
 	scanner := bufio.NewScanner(rdr)
 	scanner.Split(bufio.ScanWords)
 	for scanner.Scan() {
-		word := scanner.Text()
-		if len(word) > len(currentLongestWord) {
-			currentLongestWord = word
+
+		wordOrManyWords := scanner.Text()
+		wordOrManyWords = strings.Replace(wordOrManyWords,"?", " ", -1)
+		wordOrManyWords = strings.Replace(wordOrManyWords,"--", " ", -1)
+		wordOrManyWords = strings.Replace(wordOrManyWords,"-", " ", -1)
+		wordOrManyWords = strings.Replace(wordOrManyWords,"/", " ", -1)
+
+		for _, word := range strings.Fields(wordOrManyWords) {
+			if len(word) > len(currentLongestWord) {
+				currentLongestWord = word
+			}
 		}
 	}
 	return currentLongestWord
@@ -30,5 +39,4 @@ func main() {
 
 	longest := LongestWord(src)
 	fmt.Println(longest)
-
 }
